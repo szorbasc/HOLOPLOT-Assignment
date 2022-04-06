@@ -51,20 +51,23 @@ The correct state of objects present in the AudioObjectManager is the following:
 ● Object with third id has position D
 Optional: For an additional challenge feel free to extend your implementation with a
 redo functionality.
+
+INTERFACE
 IAudioObjectManager.h
+
 #pragma once
 namespace holoplot {
-struct Id;
-struct Position;
-class AudioObject;
-class IAudioObjectManager
-{
-public:
-virtual ~IAudioObjectManager() = default;
-virtual void add(const AudioObject &) = 0;
-virtual void remove(const Id &) = 0;
-virtual void changePosition(const Id &, const Position &) = 0;
-virtual void undo() = 0;
-};
+  struct Id;
+  struct Position;
+  class AudioObject;
+  class IAudioObjectManager
+  {
+  public:
+    virtual ~IAudioObjectManager() = default;
+    virtual void add(const AudioObject &) = 0;
+    virtual void remove(const Id &) = 0;
+    virtual void changePosition(const Id &, const Position &) = 0;
+    virtual void undo() = 0;
+  };
 }
 ```
