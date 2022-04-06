@@ -1,7 +1,7 @@
 # HOLOPLOT-Assignment
 HOLOPLOT Interview task in C++
 
-My take on the assignment which they cannot give feedback and expected a bit more..
+My take on the simple assignment which they cannot give feedback and expected a bit more..
 
 ## DESCRIPTION
 ```
