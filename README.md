@@ -26,8 +26,6 @@ that they are not interleaved with different action types) shall be reverted
 altogether by a single undo operation.
 Eg. if we on one hand start with an object at Position A, move it sequentially to Position B
 and C and undo, the Position of the object should be Position A again. If we on the other
-HOLOPLOT GmbH
-Ringbahnstrasse 10-14, 12099 Berlin, Germany 1 / 3
 hand start with the same object at Position A, move it to Position B,
 add/remove/changePosition of a different object, then move the first object sequentially
 to Position C and D, after applying undo, the Position of the first object should be B
